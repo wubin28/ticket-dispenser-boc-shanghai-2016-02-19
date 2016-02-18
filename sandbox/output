@@ -1,11 +1,7 @@
-TicketDispenserTest.java:5: error: cannot find symbol
-    @Test
-     ^
-  symbol:   class Test
-  location: class TicketDispenserTest
-TicketDispenserTest.java:7: error: cannot find symbol
-        assertEquals(1, 1);
-        ^
-  symbol:   method assertEquals(int,int)
-  location: class TicketDispenserTest
+TicketDispenserTest.java:2: error: package org.jmock does not exist
+import org.jmock.*;
+^
+TicketDispenserTest.java:3: error: package org.jmock.integration.junit4 does not exist
+import org.jmock.integration.junit4.*;
+^
 2 errors
