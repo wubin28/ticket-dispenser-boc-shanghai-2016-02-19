@@ -1,7 +1,11 @@
-ls: cannot access *Test*.class: No such file or directory
-JUnit version 4.11-SNAPSHOT-20120416-1530
-
-Time: 0.001
-
-OK (0 tests)
-
+TicketDispenserTest.java:5: error: cannot find symbol
+    @Test
+     ^
+  symbol:   class Test
+  location: class TicketDispenserTest
+TicketDispenserTest.java:7: error: cannot find symbol
+        assertEquals(1, 1);
+        ^
+  symbol:   method assertEquals(int,int)
+  location: class TicketDispenserTest
+2 errors
