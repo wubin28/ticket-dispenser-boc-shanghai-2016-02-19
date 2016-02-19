@@ -41,7 +41,8 @@ public class TicketDispenserTest {
 
         int turnNumber = dispenser.getTurnTicket().getTurnNumber();
 
-        assertEquals(59, turnNumber);       
+        assertEquals(59, turnNumber); 
+        mockSequence.verifyMethodGetNextTurnNumberCalledOnce();
     }
 
     //TODO vip_ticket_turn_numbers_should_begin_from_1001
