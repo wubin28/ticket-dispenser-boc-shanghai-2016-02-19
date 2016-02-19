@@ -4,7 +4,7 @@ public class MockTurnNumberSequence extends TurnNumberSequence {
 
     public void arrangeNextTurnNumber(int nextTurnNumber) {
         this.nextTurnNumber = nextTurnNumber;
-        this.count = 0;
+        this.count = 2;
     }
 
     @Override
