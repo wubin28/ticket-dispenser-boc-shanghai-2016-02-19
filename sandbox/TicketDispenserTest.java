@@ -20,6 +20,7 @@ public class TicketDispenserTest {
 
     @Test
     public void a_new_ticket_from_another_ticket_dispenser_should_have_turn_number_subsequent_to_previous_one(){
+        TurnNumberSequence sequence = new TurnNumberSequence();
         TicketDispenser ticketDispenser = new TicketDispenser(sequence);
         TicketDispenser anotherTicketDispenser = new TicketDispenser(sequence);
 
