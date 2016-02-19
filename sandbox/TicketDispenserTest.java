@@ -12,14 +12,17 @@ public class TicketDispenserTest {
     public void a_new_ticket_should_have_turn_number_subsequent_to_previous_one() {
         TicketDispenser ticketDispenser = new TicketDispenser();
 
-        int previousTicketTurnNumber = ticketDispenser.getTurnTicket().getTurnNumber();
-     
+        int previousTicketTurnNumber = ticketDispenser.getTurnTicket().getTurnNumber();     
         int newTicketTurnNumber = ticketDispenser.getTurnTicket().getTurnNumber();
 
         assertEquals(1, newTicketTurnNumber - previousTicketTurnNumber);
     }
 
-    //TODO a_new_ticket_should_have_turn_number_subsequent_to_previous_one
+    @Test
+    public void a_new_ticket_from_another_ticket_dispenser_should_have_turn_number_subsequent_to_previous_one(){
+
+        assertEquals(1,newTicketFromAnotherDispenser-previousTicketFromDispenser)       
+    }
     //TODO a_new_ticket_from_another_ticket_dispenser_should_have_turn_number_subsequent_to_previous_one
     //TODO a_new_ticket_should_have_the_given_turn_number
 
