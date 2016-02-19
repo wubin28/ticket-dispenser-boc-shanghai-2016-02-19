@@ -1,4 +1,11 @@
-TicketDispenserTest.java:24: error: ';' expected
-        assertEquals(1,newTicketFromAnotherDispenser-previousTicketFromDispenser)       
-                                                                                 ^
-1 error
+TicketDispenserTest.java:24: error: cannot find symbol
+        assertEquals(1,ticketFromAnotherDispenser-previousTicketFromDispenser);       
+                       ^
+  symbol:   variable ticketFromAnotherDispenser
+  location: class TicketDispenserTest
+TicketDispenserTest.java:24: error: cannot find symbol
+        assertEquals(1,ticketFromAnotherDispenser-previousTicketFromDispenser);       
+                                                  ^
+  symbol:   variable previousTicketFromDispenser
+  location: class TicketDispenserTest
+2 errors
