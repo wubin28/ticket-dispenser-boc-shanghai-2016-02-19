@@ -34,7 +34,9 @@ public class TicketDispenserTest {
 
     @Test
     public void a_new_ticket_should_have_the_given_turn_number(){
-        TicketDispenser dispenser = new TicketDispenser();
+        MockTurnNumberSequence mockSequence = new MockTurnNumberSequence();
+        mockSequence.arrangeNextTurnNumber(59);
+        TicketDispenser dispenser = new TicketDispenser(mockSequence);
 
         int turnNumber = dispenser.getTurnTicket().getTurnNumber();
 
