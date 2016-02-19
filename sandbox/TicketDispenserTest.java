@@ -45,6 +45,18 @@ public class TicketDispenserTest {
         mockSequence.verifyMethodGetNextTurnNumberCalledOnce();
     }
 
+    @Test
+    public void a_new_ticket_should_have_the_given_turn_number_using_mockito(){
+        TurnNumberSequence mockSequence = mock(TurnNumberSequence.class);
+        when(mockSequence.getNextTurnNumber()).thenReturn(59);
+        TicketDispenser dispenser = new TicketDispenser(mockSequence);
+
+        int turnNumber = dispenser.getTurnTicket().getTurnNumber();
+
+        assertEquals(59, turnNumber); 
+        verify(mockSequence).getNextTurnNumber();
+    }
+
     //TODO vip_ticket_turn_numbers_should_begin_from_1001
     //TODO normal_ticket_turn_numbers_should_begin_from_2001
 
