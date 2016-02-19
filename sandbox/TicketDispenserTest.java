@@ -34,7 +34,10 @@ public class TicketDispenserTest {
 
     @Test
     public void a_new_ticket_should_have_the_given_turn_number(){
+        TicketDispenser dispenser = new TicketDispenser();
+
         int turnNumber = dispenser.getTurnTicket().getTurnNumber();
+
         assertEquals(59, turnNumber);       
     }
 
