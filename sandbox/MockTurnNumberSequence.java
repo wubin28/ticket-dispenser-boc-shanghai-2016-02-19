@@ -16,7 +16,7 @@ public class MockTurnNumberSequence extends TurnNumberSequence {
     
     public void verifyMethodGetNextTurnNumberCalledOnce() {
         if(count != 1) {
-            throw IllegalStateException("method getNextTurnNumber() should be called once");
+            throw new IllegalStateException("method getNextTurnNumber() should be called once");
         }
     }
 }
