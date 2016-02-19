@@ -20,6 +20,8 @@ public class TicketDispenserTest {
 
     @Test
     public void a_new_ticket_from_another_ticket_dispenser_should_have_turn_number_subsequent_to_previous_one(){
+        int previousTicketFromDispenser =ticketDispenser.getTurnTicket().getTurnNumber();
+        int ticketFromAnotherDispenser =anotherTicketDispenser.getTurnTicket().getTurnNumber();
 
         assertEquals(1,ticketFromAnotherDispenser-previousTicketFromDispenser);       
     }
