@@ -1,6 +1,6 @@
-TicketDispenserTest.java:63: error: cannot find symbol
-        int firstVipTicketTurnNumber = vipTicketDispenser.getTurnTicket().getTurnNumber();
-                                       ^
-  symbol:   variable vipTicketDispenser
+TicketDispenserTest.java:62: error: cannot find symbol
+        TicketDispenser vipTicketDispenser = new TicketDispenser(turnNumberSequence);    
+                                                                 ^
+  symbol:   variable turnNumberSequence
   location: class TicketDispenserTest
 1 error
