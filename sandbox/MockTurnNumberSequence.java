@@ -11,4 +11,7 @@ public class MockTurnNumberSequence extends TurnNumberSequence {
         return nextTurnNumber;
     }
     
+    public void verifyMethodGetNextTurnNumberCalledOnce() {
+        assert(count == 1);
+    }
 }

@@ -1,6 +1,6 @@
-TicketDispenserTest.java:45: error: cannot find symbol
-        mockSequence.verifyMethodGetNextTurnNumberCalledOnce();
-                    ^
-  symbol:   method verifyMethodGetNextTurnNumberCalledOnce()
-  location: variable mockSequence of type MockTurnNumberSequence
+MockTurnNumberSequence.java:15: error: cannot find symbol
+        assert(count == 1);
+               ^
+  symbol:   variable count
+  location: class MockTurnNumberSequence
 1 error
