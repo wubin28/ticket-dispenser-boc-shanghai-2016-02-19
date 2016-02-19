@@ -1,6 +1,6 @@
 TicketDispenserTest.java:63: error: cannot find symbol
-        assertEquals(1001,firstVipTicketTurnNumber);
-                          ^
-  symbol:   variable firstVipTicketTurnNumber
+        int firstVipTicketTurnNumber = vipTicketDispenser.getTurnTicket().getTurnNumber();
+                                       ^
+  symbol:   variable vipTicketDispenser
   location: class TicketDispenserTest
 1 error

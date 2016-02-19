@@ -60,6 +60,7 @@ public class TicketDispenserTest {
 
     public void vip_ticket_turn_numbers_should_begin_from_1001() {
     
+        int firstVipTicketTurnNumber = vipTicketDispenser.getTurnTicket().getTurnNumber();
         assertEquals(1001,firstVipTicketTurnNumber);
     }
     //TODO vip_ticket_turn_numbers_should_begin_from_1001
