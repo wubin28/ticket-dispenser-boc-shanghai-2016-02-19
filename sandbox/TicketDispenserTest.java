@@ -58,6 +58,10 @@ public class TicketDispenserTest {
         verify(mockSequence).getNextTurnNumber();
     }
 
+    public void vip_ticket_turn_numbers_should_begin_from_1001() {
+    
+        assertEquals(1001,firstVipTicketTurnNumber);
+    }
     //TODO vip_ticket_turn_numbers_should_begin_from_1001
     //TODO normal_ticket_turn_numbers_should_begin_from_2001
 

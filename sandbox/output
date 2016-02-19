@@ -1,6 +1,6 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.....
-Time: 0.166
-
-OK (5 tests)
-
+TicketDispenserTest.java:63: error: cannot find symbol
+        assertEquals(1001,firstVipTicketTurnNumber);
+                          ^
+  symbol:   variable firstVipTicketTurnNumber
+  location: class TicketDispenserTest
+1 error
