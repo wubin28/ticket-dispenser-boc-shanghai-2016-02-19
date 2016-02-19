@@ -1,4 +1,6 @@
-TicketDispenserTest.java:37: error: illegal '.'
-        int turnNumber = dispenser..getTurnTicket().getTurnNumber();
-                                   ^
+TicketDispenserTest.java:37: error: cannot find symbol
+        int turnNumber = dispenser.getTurnTicket().getTurnNumber();
+                         ^
+  symbol:   variable dispenser
+  location: class TicketDispenserTest
 1 error
