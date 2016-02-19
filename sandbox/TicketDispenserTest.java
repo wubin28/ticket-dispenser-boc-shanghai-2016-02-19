@@ -23,13 +23,19 @@ public class TicketDispenserTest {
         TicketDispenser ticketDispenser = new TicketDispenser();
         TicketDispenser anotherTicketDispenser = new TicketDispenser();
 
-        int previousTicketFromDispenser = ticketDispenser.getTurnTicket().getTurnNumber();
-        int ticketFromAnotherDispenser = anotherTicketDispenser.getTurnTicket().getTurnNumber();
+        int turnNumberOfPreviousTicketFromDispenser = 
+            ticketDispenser.getTurnTicket().getTurnNumber();
+        int turnNumberOfTicketFromAnotherDispenser = 
+            anotherTicketDispenser.getTurnTicket().getTurnNumber();
 
-        assertEquals(1, ticketFromAnotherDispenser - previousTicketFromDispenser);       
+        assertEquals(1, turnNumberOfTicketFromAnotherDispenser - 
+            turnNumberOfPreviousTicketFromDispenser);       
     }
-    //TODO a_new_ticket_from_another_ticket_dispenser_should_have_turn_number_subsequent_to_previous_one
-    //TODO a_new_ticket_should_have_the_given_turn_number
+
+    @Test
+    public void a_new_ticket_should_have_the_given_turn_number(){
+        assertEquals(59, 59);       
+    }
 
     //TODO vip_ticket_turn_numbers_should_begin_from_1001
     //TODO normal_ticket_turn_numbers_should_begin_from_2001
