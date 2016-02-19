@@ -1,6 +1,11 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.
-Time: 0.008
-
-OK (1 test)
-
+TicketDispenserTest.java:13: error: cannot find symbol
+        assertEquals(1, newTicketTurnNumber - previousTicketTurnNumber);
+                        ^
+  symbol:   variable newTicketTurnNumber
+  location: class TicketDispenserTest
+TicketDispenserTest.java:13: error: cannot find symbol
+        assertEquals(1, newTicketTurnNumber - previousTicketTurnNumber);
+                                              ^
+  symbol:   variable previousTicketTurnNumber
+  location: class TicketDispenserTest
+2 errors
