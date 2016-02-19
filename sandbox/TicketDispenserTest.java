@@ -10,6 +10,7 @@ public class TicketDispenserTest {
 
     @Test
     public void a_new_ticket_should_have_turn_number_subsequent_to_previous_one() {
+        TicketDispenser ticketDispenser = new TicketDispenser();
         TurnTicket ticket = ticketDispenser.getTurnTicket();
         int newTicketTurnNumber = ticket.getTurnNumber();
         assertEquals(1, newTicketTurnNumber - previousTicketTurnNumber);
