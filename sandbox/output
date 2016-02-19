@@ -1,7 +1,7 @@
-TicketDispenserTest.java:14: error: cannot find symbol
-        int newTicketTurnNumber = ticket.getTurnNumber();
-                                  ^
-  symbol:   variable ticket
+TicketDispenserTest.java:13: error: cannot find symbol
+        TurnTicket ticket = ticketDispenser.getTurnTicket();
+                            ^
+  symbol:   variable ticketDispenser
   location: class TicketDispenserTest
 TicketDispenserTest.java:15: error: cannot find symbol
         assertEquals(1, newTicketTurnNumber - previousTicketTurnNumber);
