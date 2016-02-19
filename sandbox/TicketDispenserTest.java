@@ -67,15 +67,4 @@ public class TicketDispenserTest {
         assertEquals(1001, firstVipTicketTurnNumber);
     }
     
-    @Test
-    public void normal_ticket_turn_numbers_should_begin_from_2001() {
-        TicketDispenser normalTicketDispenser = 
-            new TicketDispenser(new TurnNumberSequence(2001));    
-
-        int firstNormalTicketTurnNumber =
-            normalTicketDispenser.getTurnTicket().getTurnNumber();
-
-        assertEquals(2001, firstNormalTicketTurnNumber);
-    }
-
 }
