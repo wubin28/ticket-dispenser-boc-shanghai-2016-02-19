@@ -59,6 +59,7 @@ public class TicketDispenserTest {
     }
 
     public void vip_ticket_turn_numbers_should_begin_from_1001() {
+        TurnNumberSequence turnNumberSequence = new TurnNumberSequence(1001);
         TicketDispenser vipTicketDispenser = new TicketDispenser(turnNumberSequence);    
 
         int firstVipTicketTurnNumber = vipTicketDispenser.getTurnTicket().getTurnNumber();
