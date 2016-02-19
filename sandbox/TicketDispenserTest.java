@@ -10,6 +10,8 @@ public class TicketDispenserTest {
 
     //TODO a_new_ticket_should_have_turn_number_subsequent_to_previous_one
     //TODO a_new_ticket_from_another_ticket_dispenser_should_have_turn_number_subsequent_to_previous_one
-    //TODO 
+    //TODO a_new_ticket_should_have_the_given_turn_number
+    //TODO vip_ticket_turn_numbers_should_begin_from_1001
+    //TODO normal_ticket_turn_numbers_should_begin_from_2001
 
 }
