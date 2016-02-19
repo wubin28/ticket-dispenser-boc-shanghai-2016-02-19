@@ -1,6 +1,4 @@
-TicketDispenserTest.java:37: error: cannot find symbol
-        assertEquals(59, turnNumber);       
-                         ^
-  symbol:   variable turnNumber
-  location: class TicketDispenserTest
+TicketDispenserTest.java:37: error: illegal '.'
+        int turnNumber = dispenser..getTurnTicket().getTurnNumber();
+                                   ^
 1 error
