@@ -34,7 +34,7 @@ public class TicketDispenserTest {
 
     @Test
     public void a_new_ticket_should_have_the_given_turn_number(){
-        assertEquals(59, 59);       
+        assertEquals(59, turnNumber);       
     }
 
     //TODO vip_ticket_turn_numbers_should_begin_from_1001
