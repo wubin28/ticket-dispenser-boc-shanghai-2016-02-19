@@ -57,7 +57,7 @@ public class TicketDispenserTest {
         assertEquals(59, turnNumber); 
         verify(mockSequence).getNextTurnNumber();
     }
-
+    @Test
     public void vip_ticket_turn_numbers_should_begin_from_1001() {
         TurnNumberSequence turnNumberSequence = new TurnNumberSequence(1001);
         TicketDispenser vipTicketDispenser = new TicketDispenser(turnNumberSequence);    
@@ -66,7 +66,7 @@ public class TicketDispenserTest {
 
         assertEquals(1001,firstVipTicketTurnNumber);
     }
-    //TODO vip_ticket_turn_numbers_should_begin_from_1001
+
     //TODO normal_ticket_turn_numbers_should_begin_from_2001
 
 }
